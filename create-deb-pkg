@@ -17,7 +17,7 @@ packagearchitecture=(arm64 armhf armel)
 debpkgdir="${packagename}-${packageversion}-${packagerelease}"
 else
 packagearchitecture=$(dpkg --print-architecture)
-debpkgdir="${packagename}-${packageversion}-${packagerelease}_${packagearchitecture}"
+debpkgdir="${packagename}-${packageversion}-${packagerelease}-${packagearchitecture}"
 fi
 
 if [ -d "$debpkgdir" ]; then
